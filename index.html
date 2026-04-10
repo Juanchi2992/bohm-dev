@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Böhm Dev</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="icon" href="./favicon.ico">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -15,7 +14,7 @@ html{scroll-behavior:smooth}
   --white:#fff;--muted:#6b7280;--light:#9ca3af;
 }
 body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;font-weight:400;line-height:1.6;overflow-x:hidden}
- 
+
 /* NAV */
 nav{
   position:sticky;top:0;z-index:100;
@@ -40,8 +39,8 @@ nav{
   border:1px solid var(--green);
   box-shadow: 0 0 12px rgba(0,255,136,0.25);
 }
- 
- 
+
+
 /* HERO */
 .hero{
   text-align:center;padding:96px 24px 80px;position:relative;overflow:hidden;
@@ -87,7 +86,7 @@ h1 em{font-style:normal;color:var(--green)}
   transition:all .2s;text-decoration:none;display:inline-block;
 }
 .btn-outline:hover{border-color:var(--border-hover);background:var(--surface)}
- 
+
 /* LOGO STRIP / MARQUEE */
 .strip{
   border-top:1px solid var(--border);border-bottom:1px solid var(--border);
@@ -114,17 +113,17 @@ h1 em{font-style:normal;color:var(--green)}
 @media(prefers-reduced-motion:reduce){
   .strip-track{animation:none}
 }
- 
+
 /* SECTIONS */
 .section{padding:88px 32px;max-width:1100px;margin:0 auto}
 .section-border{border-top:1px solid var(--border)}
 .section-sm{max-width:640px;margin:0 auto;text-align:center;padding:88px 32px}
- 
+
 /* LABELS */
 .tag{font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--green);margin-bottom:14px;display:block}
 h2{font-size:clamp(1.7rem,3.5vw,2.8rem);font-weight:700;letter-spacing:-.03em;line-height:1.12;margin-bottom:14px}
 .lead{font-size:1rem;color:var(--light);max-width:52ch;line-height:1.7}
- 
+
 /* PROBLEM */
 .prob-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);margin-top:56px}
 .prob-cell{
@@ -135,7 +134,7 @@ h2{font-size:clamp(1.7rem,3.5vw,2.8rem);font-weight:700;letter-spacing:-.03em;li
 .prob-icon{font-size:1.2rem;margin-bottom:16px}
 .prob-cell h3{font-size:1rem;font-weight:600;margin-bottom:8px;letter-spacing:-.01em}
 .prob-cell p{font-size:.88rem;color:var(--muted);line-height:1.65}
- 
+
 /* SOLUTION */
 .sol-wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-top:56px}
 .sol-list{list-style:none}
@@ -160,14 +159,14 @@ h2{font-size:clamp(1.7rem,3.5vw,2.8rem);font-weight:700;letter-spacing:-.03em;li
 }
 .code-line{font-size:.78rem;font-family:monospace;color:var(--muted);margin-bottom:8px;line-height:1.8}
 .code-line .kw{color:var(--green)} .code-line .str{color:#f9a8d4} .code-line .fn{color:#93c5fd}
- 
+
 /* STATS */
 .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-top:56px}
 .stat-cell{background:var(--bg);padding:40px 32px;text-align:center}
 .stat-num{font-size:clamp(2rem,4vw,3.2rem);font-weight:700;letter-spacing:-.04em;color:var(--green);display:block;margin-bottom:6px}
 .stat-lbl{font-size:.85rem;color:var(--light);font-weight:500}
 .stat-sub{font-size:.8rem;color:var(--muted);margin-top:8px}
- 
+
 /* STEPS */
 .steps-list{margin-top:56px;border:1px solid var(--border);border-radius:8px;overflow:hidden}
 .step-row{
@@ -184,7 +183,7 @@ h2{font-size:clamp(1.7rem,3.5vw,2.8rem);font-weight:700;letter-spacing:-.03em;li
 }
 .step-body h3{font-size:.95rem;font-weight:600;margin-bottom:6px;letter-spacing:-.01em}
 .step-body p{font-size:.86rem;color:var(--muted);line-height:1.65}
- 
+
 /* PRICING */
 .price-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:56px}
 .price-card{
@@ -225,7 +224,7 @@ h2{font-size:clamp(1.7rem,3.5vw,2.8rem);font-weight:700;letter-spacing:-.03em;li
   border:1px solid var(--green);
   box-shadow: 0 0 12px rgba(0,255,136,0.25);
 }
- 
+
 /* DIFFERENTIATOR */
 .diff-box{
   border:1px solid var(--border);border-radius:8px;padding:48px;
@@ -249,7 +248,7 @@ h2{font-size:clamp(1.7rem,3.5vw,2.8rem);font-weight:700;letter-spacing:-.03em;li
 }
 .diff-metric .big{font-size:2.4rem;font-weight:700;color:var(--green);letter-spacing:-.04em}
 .diff-metric .sm{font-size:.78rem;color:var(--muted)}
- 
+
 /* CTA FINAL */
 .cta-section{
   text-align:center;padding:96px 32px;
@@ -269,23 +268,23 @@ h2{font-size:clamp(1.7rem,3.5vw,2.8rem);font-weight:700;letter-spacing:-.03em;li
   border:1px solid var(--green);
   box-shadow: 0 0 12px rgba(0,255,136,0.25);
 }
- 
+
 /* FOOTER */
 footer{border-top:1px solid var(--border);padding:28px 32px;display:flex;justify-content:space-between;align-items:center;font-size:.8rem;color:var(--muted)}
- 
+
 /* REVEAL */
 .r{opacity:1;transform:none;transition:opacity .6s ease,transform .6s ease}
 .r.anim{opacity:0;transform:translateY(20px)}.r.anim.v{opacity:1;transform:translateY(0)}
 .r.d1{transition-delay:.08s}.r.d2{transition-delay:.16s}.r.d3{transition-delay:.24s}
- 
+
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
- 
+
 .hero-badge{animation:fadeUp .5s ease .1s both}
 h1{animation:fadeUp .5s ease .2s both}
 .hero-sub{animation:fadeUp .5s ease .3s both}
 .hero-ctas{animation:fadeUp .5s ease .4s both}
- 
+
 /* ── HAMBURGER BUTTON ── */
 .nav-hamburger{
   display:none;flex-direction:column;justify-content:center;gap:5px;
@@ -298,11 +297,11 @@ h1{animation:fadeUp .5s ease .2s both}
 .nav-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .nav-hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
 .nav-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
- 
+
 /* Mobile nav drawer */
 .mobile-nav{
   display:none;position:fixed;top:60px;left:0;right:0;z-index:99;
-  background:rgba(10,10,10,.97);backdrop-filter:blur(16px);
+  background:rgba(179, 178, 178, 0.582);backdrop-filter:blur(16px);
   border-bottom:1px solid var(--border);
   flex-direction:column;padding:8px 0 16px;
   transform:translateY(-8px);opacity:0;
@@ -312,7 +311,7 @@ h1{animation:fadeUp .5s ease .2s both}
   display:flex;opacity:1;transform:translateY(0);pointer-events:all;
 }
 .mobile-nav a{
-  color:var(--light);font-size:.95rem;text-decoration:none;
+  color:var(--bg);font-size:.95rem;text-decoration:none;
   padding:14px 28px;transition:color .2s;border-bottom:1px solid var(--border);
 }
 .mobile-nav a:last-child{border-bottom:none}
@@ -320,7 +319,7 @@ h1{animation:fadeUp .5s ease .2s both}
 .mobile-nav .nav-btn{
   margin:16px 28px 0;text-align:center;display:block;
 }
- 
+
 /* ── TABLET (≤ 900px) ── */
 @media(max-width:900px){
   .section{padding:72px 28px}
@@ -328,7 +327,7 @@ h1{animation:fadeUp .5s ease .2s both}
   .diff-box{padding:36px 28px;gap:32px}
   .sol-wrap{gap:40px}
 }
- 
+
 /* ── MOBILE (≤ 768px) ── */
 @media(max-width:768px){
   /* Nav */
@@ -336,62 +335,62 @@ h1{animation:fadeUp .5s ease .2s both}
   nav .nav-links{display:none}
   nav .nav-btn{display:none}
   .nav-hamburger{display:flex}
- 
+
   /* Hero */
   .hero{padding:64px 20px 56px}
   .hero-glow{width:340px;height:260px}
- 
+
   /* Sections */
   .section{padding:56px 20px}
   .section-sm{padding:56px 20px}
   .section-border .section{padding:56px 20px}
- 
+
   /* Grids → single column */
   .prob-grid{grid-template-columns:1fr;gap:1px}
   .sol-wrap{grid-template-columns:1fr;gap:32px}
   .stats-grid{grid-template-columns:1fr;gap:1px}
   .price-grid{grid-template-columns:1fr;gap:16px}
- 
+
   /* Differentiator box */
   .diff-box{
     grid-template-columns:1fr;padding:28px 20px;gap:28px;margin-top:40px;
   }
   .diff-visual{text-align:left}
   .diff-metric{display:inline-block}
- 
+
   /* Prob cells */
   .prob-cell{padding:28px 20px}
- 
+
   /* Solution visual */
   .sol-visual{padding:24px 20px}
- 
+
   /* Stats */
   .stat-cell{padding:32px 20px}
- 
+
   /* Steps */
   .step-row{padding:24px 20px;gap:16px}
- 
+
   /* Pricing */
   .price-card{padding:28px 20px}
- 
+
   /* Strip */
   .strip{padding:0}
- 
+
   /* CTA section */
   .cta-section{padding:72px 20px}
   .cta-section::before{width:100%;height:280px}
- 
+
   /* Footer */
   footer{
     flex-direction:column;gap:12px;text-align:center;
     padding:24px 20px;
   }
- 
+
   /* Hero CTAs */
   .hero-ctas{flex-direction:column;align-items:center}
   .hero-ctas .btn-solid,.hero-ctas .btn-outline{width:100%;max-width:280px;text-align:center}
 }
- 
+
 /* ── SMALL MOBILE (≤ 400px) ── */
 @media(max-width:400px){
   .hero{padding:48px 16px 44px}
@@ -408,7 +407,7 @@ h1{animation:fadeUp .5s ease .2s both}
 </style>
 </head>
 <body>
- 
+
 <header>
 <nav>
   <div class="logo">böhm<span>.</span>dev</div>
@@ -429,7 +428,7 @@ h1{animation:fadeUp .5s ease .2s both}
   <a href="https://wa.me/5492215404664" class="nav-btn" data-i18n="nav.cta">Agendar llamada</a>
 </div>
 </header>
- 
+
 <!-- HERO -->
 <main>
 <section class="hero">
@@ -442,7 +441,7 @@ h1{animation:fadeUp .5s ease .2s both}
     <a href="#proceso" class="btn-outline" data-i18n="hero.cta2">Ver cómo funciona</a>
   </div>
 </section>
- 
+
 <div class="strip">
   <p data-i18n="strip.label">Profesionales que ya confían</p>
   <div class="strip-track" aria-hidden="true">
@@ -485,7 +484,7 @@ h1{animation:fadeUp .5s ease .2s both}
     </div>
   </div>
 </div>
- 
+
 <!-- PROBLEMA -->
 <div class="section-border">
   <div class="section" id="problema">
@@ -516,7 +515,7 @@ h1{animation:fadeUp .5s ease .2s both}
     </div>
   </div>
 </div>
- 
+
 <!-- SOLUCIÓN -->
 <div class="section-border">
   <div class="section" id="solucion">
@@ -548,8 +547,8 @@ h1{animation:fadeUp .5s ease .2s both}
     </div>
   </div>
 </div>
- 
- 
+
+
 <!-- PROCESO -->
 <div class="section-border">
   <div class="section" id="proceso">
@@ -587,7 +586,7 @@ h1{animation:fadeUp .5s ease .2s both}
     </div>
   </div>
 </div>
- 
+
 <!-- PRECIOS -->
 <div class="section-border">
   <div class="section" id="precios">
@@ -623,7 +622,7 @@ h1{animation:fadeUp .5s ease .2s both}
     </div>
   </div>
 </div>
- 
+
 <!-- DIFERENCIAL -->
 <div class="section-border">
   <div class="section">
@@ -636,7 +635,7 @@ h1{animation:fadeUp .5s ease .2s both}
     </div>
   </div>
 </div>
- 
+
 <!-- CTA FINAL -->
 <section class="cta-section" id="contacto">
   <span class="tag r" style="display:block" data-i18n="cta.tag">Siguiente paso</span>
@@ -646,14 +645,14 @@ h1{animation:fadeUp .5s ease .2s both}
     <a href="https://wa.me/5492215404664" class="btn-solid" data-i18n="cta.btn">Agendar llamada</a>
   </div>
 </section>
- 
+
 </main>
- 
+
 <footer>
   <div class="logo">böhm<span style="color:var(--green)">.</span>dev</div>
   <span data-i18n="footer.copy">© 2025 Böhm Dev. Todos los derechos reservados.</span>
 </footer>
- 
+
 <!-- ═══════════════════════════════════════════════
      i18n — detección automática + botones manuales
 ════════════════════════════════════════════════ -->
@@ -814,7 +813,7 @@ const translations = {
     "footer.copy":      "© 2025 Böhm Dev. All rights reserved.",
   }
 };
- 
+
 function setLang(lang) {
   const t = translations[lang] || translations['es'];
   document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -823,13 +822,13 @@ function setLang(lang) {
   });
   document.documentElement.lang = lang;
 }
- 
+
 // Detectar idioma del navegador al cargar
 const browserLang = (navigator.language || navigator.userLanguage || 'es').slice(0, 2);
 const initialLang = translations[browserLang] ? browserLang : 'es';
 setLang(initialLang);
 </script>
- 
+
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 <script>
 // Hamburger menu
