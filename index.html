@@ -6,7 +6,6 @@
 <title>Böhm Dev</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" href="./favicon.ico">
-
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -16,7 +15,7 @@ html{scroll-behavior:smooth}
   --white:#fff;--muted:#6b7280;--light:#9ca3af;
 }
 body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;font-weight:400;line-height:1.6;overflow-x:hidden}
-
+ 
 /* NAV */
 nav{
   position:sticky;top:0;z-index:100;
@@ -31,8 +30,7 @@ nav{
 .nav-links a{color:var(--muted);font-size:.85rem;text-decoration:none;transition:color .2s}
 .nav-links a:hover{color:var(--white)}
 .nav-btn{
-  background:var(--green
-  );color:#000;font-size:.82rem;font-weight:500;
+  background:var(--green);color:#000;font-size:.82rem;font-weight:500;
   padding:7px 30px;border:none;cursor:pointer;border-radius:999px;
   transition:opacity .2s;text-decoration:none;display:inline-block;
 }
@@ -42,7 +40,8 @@ nav{
   border:1px solid var(--green);
   box-shadow: 0 0 12px rgba(0,255,136,0.25);
 }
-
+ 
+ 
 /* HERO */
 .hero{
   text-align:center;padding:96px 24px 80px;position:relative;overflow:hidden;
@@ -82,14 +81,13 @@ h1 em{font-style:normal;color:var(--green)}
   border:1px solid var(--green);
   box-shadow: 0 0 12px rgba(0,255,136,0.25);
 }
-/* tu comentario aquí .btn-solid:hover{opacity:.88}*/
 .btn-outline{
   background:transparent;color:var(--white);font-size:.88rem;font-weight:500;
   padding:10px 30px;border:1px solid var(--border);border-radius:999px;cursor:pointer;
   transition:all .2s;text-decoration:none;display:inline-block;
 }
 .btn-outline:hover{border-color:var(--border-hover);background:var(--surface)}
-
+ 
 /* LOGO STRIP / MARQUEE */
 .strip{
   border-top:1px solid var(--border);border-bottom:1px solid var(--border);
@@ -116,17 +114,17 @@ h1 em{font-style:normal;color:var(--green)}
 @media(prefers-reduced-motion:reduce){
   .strip-track{animation:none}
 }
-
+ 
 /* SECTIONS */
 .section{padding:88px 32px;max-width:1100px;margin:0 auto}
 .section-border{border-top:1px solid var(--border)}
 .section-sm{max-width:640px;margin:0 auto;text-align:center;padding:88px 32px}
-
+ 
 /* LABELS */
 .tag{font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--green);margin-bottom:14px;display:block}
 h2{font-size:clamp(1.7rem,3.5vw,2.8rem);font-weight:700;letter-spacing:-.03em;line-height:1.12;margin-bottom:14px}
 .lead{font-size:1rem;color:var(--light);max-width:52ch;line-height:1.7}
-
+ 
 /* PROBLEM */
 .prob-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);margin-top:56px}
 .prob-cell{
@@ -137,7 +135,7 @@ h2{font-size:clamp(1.7rem,3.5vw,2.8rem);font-weight:700;letter-spacing:-.03em;li
 .prob-icon{font-size:1.2rem;margin-bottom:16px}
 .prob-cell h3{font-size:1rem;font-weight:600;margin-bottom:8px;letter-spacing:-.01em}
 .prob-cell p{font-size:.88rem;color:var(--muted);line-height:1.65}
-
+ 
 /* SOLUTION */
 .sol-wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-top:56px}
 .sol-list{list-style:none}
@@ -162,14 +160,14 @@ h2{font-size:clamp(1.7rem,3.5vw,2.8rem);font-weight:700;letter-spacing:-.03em;li
 }
 .code-line{font-size:.78rem;font-family:monospace;color:var(--muted);margin-bottom:8px;line-height:1.8}
 .code-line .kw{color:var(--green)} .code-line .str{color:#f9a8d4} .code-line .fn{color:#93c5fd}
-
+ 
 /* STATS */
 .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-top:56px}
 .stat-cell{background:var(--bg);padding:40px 32px;text-align:center}
 .stat-num{font-size:clamp(2rem,4vw,3.2rem);font-weight:700;letter-spacing:-.04em;color:var(--green);display:block;margin-bottom:6px}
 .stat-lbl{font-size:.85rem;color:var(--light);font-weight:500}
 .stat-sub{font-size:.8rem;color:var(--muted);margin-top:8px}
-
+ 
 /* STEPS */
 .steps-list{margin-top:56px;border:1px solid var(--border);border-radius:8px;overflow:hidden}
 .step-row{
@@ -186,7 +184,7 @@ h2{font-size:clamp(1.7rem,3.5vw,2.8rem);font-weight:700;letter-spacing:-.03em;li
 }
 .step-body h3{font-size:.95rem;font-weight:600;margin-bottom:6px;letter-spacing:-.01em}
 .step-body p{font-size:.86rem;color:var(--muted);line-height:1.65}
-
+ 
 /* PRICING */
 .price-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:56px}
 .price-card{
@@ -221,14 +219,13 @@ h2{font-size:clamp(1.7rem,3.5vw,2.8rem);font-weight:700;letter-spacing:-.03em;li
 }
 .price-cta:hover{background:var(--surface);border-color:var(--border-hover)}
 .price-card.featured .price-cta{background:var(--green);color:#000;border-color:var(--green)}
-/*.price-card.featured .price-cta:hover{opacity:.88}*/
 .price-card.featured .price-cta:hover{
   background: rgba(0, 255, 136, 0.10);
   color: var(--green);
   border:1px solid var(--green);
   box-shadow: 0 0 12px rgba(0,255,136,0.25);
 }
-
+ 
 /* DIFFERENTIATOR */
 .diff-box{
   border:1px solid var(--border);border-radius:8px;padding:48px;
@@ -252,7 +249,7 @@ h2{font-size:clamp(1.7rem,3.5vw,2.8rem);font-weight:700;letter-spacing:-.03em;li
 }
 .diff-metric .big{font-size:2.4rem;font-weight:700;color:var(--green);letter-spacing:-.04em}
 .diff-metric .sm{font-size:.78rem;color:var(--muted)}
-
+ 
 /* CTA FINAL */
 .cta-section{
   text-align:center;padding:96px 32px;
@@ -272,23 +269,23 @@ h2{font-size:clamp(1.7rem,3.5vw,2.8rem);font-weight:700;letter-spacing:-.03em;li
   border:1px solid var(--green);
   box-shadow: 0 0 12px rgba(0,255,136,0.25);
 }
-
+ 
 /* FOOTER */
 footer{border-top:1px solid var(--border);padding:28px 32px;display:flex;justify-content:space-between;align-items:center;font-size:.8rem;color:var(--muted)}
-
+ 
 /* REVEAL */
 .r{opacity:1;transform:none;transition:opacity .6s ease,transform .6s ease}
 .r.anim{opacity:0;transform:translateY(20px)}.r.anim.v{opacity:1;transform:translateY(0)}
 .r.d1{transition-delay:.08s}.r.d2{transition-delay:.16s}.r.d3{transition-delay:.24s}
-
+ 
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
-
+ 
 .hero-badge{animation:fadeUp .5s ease .1s both}
 h1{animation:fadeUp .5s ease .2s both}
 .hero-sub{animation:fadeUp .5s ease .3s both}
 .hero-ctas{animation:fadeUp .5s ease .4s both}
-
+ 
 /* ── HAMBURGER BUTTON ── */
 .nav-hamburger{
   display:none;flex-direction:column;justify-content:center;gap:5px;
@@ -301,11 +298,11 @@ h1{animation:fadeUp .5s ease .2s both}
 .nav-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .nav-hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
 .nav-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-
+ 
 /* Mobile nav drawer */
 .mobile-nav{
   display:none;position:fixed;top:60px;left:0;right:0;z-index:99;
-  background:rgba(128, 128, 128, 0.61);backdrop-filter:blur(16px);
+  background:rgba(10,10,10,.97);backdrop-filter:blur(16px);
   border-bottom:1px solid var(--border);
   flex-direction:column;padding:8px 0 16px;
   transform:translateY(-8px);opacity:0;
@@ -314,9 +311,8 @@ h1{animation:fadeUp .5s ease .2s both}
 .mobile-nav.open{
   display:flex;opacity:1;transform:translateY(0);pointer-events:all;
 }
-
 .mobile-nav a{
-  color:#000000;font-size:.95rem;text-decoration:none;
+  color:var(--light);font-size:.95rem;text-decoration:none;
   padding:14px 28px;transition:color .2s;border-bottom:1px solid var(--border);
 }
 .mobile-nav a:last-child{border-bottom:none}
@@ -324,7 +320,7 @@ h1{animation:fadeUp .5s ease .2s both}
 .mobile-nav .nav-btn{
   margin:16px 28px 0;text-align:center;display:block;
 }
-
+ 
 /* ── TABLET (≤ 900px) ── */
 @media(max-width:900px){
   .section{padding:72px 28px}
@@ -332,7 +328,7 @@ h1{animation:fadeUp .5s ease .2s both}
   .diff-box{padding:36px 28px;gap:32px}
   .sol-wrap{gap:40px}
 }
-
+ 
 /* ── MOBILE (≤ 768px) ── */
 @media(max-width:768px){
   /* Nav */
@@ -340,62 +336,62 @@ h1{animation:fadeUp .5s ease .2s both}
   nav .nav-links{display:none}
   nav .nav-btn{display:none}
   .nav-hamburger{display:flex}
-
+ 
   /* Hero */
   .hero{padding:64px 20px 56px}
   .hero-glow{width:340px;height:260px}
-
+ 
   /* Sections */
   .section{padding:56px 20px}
   .section-sm{padding:56px 20px}
   .section-border .section{padding:56px 20px}
-
+ 
   /* Grids → single column */
   .prob-grid{grid-template-columns:1fr;gap:1px}
   .sol-wrap{grid-template-columns:1fr;gap:32px}
   .stats-grid{grid-template-columns:1fr;gap:1px}
   .price-grid{grid-template-columns:1fr;gap:16px}
-
+ 
   /* Differentiator box */
   .diff-box{
     grid-template-columns:1fr;padding:28px 20px;gap:28px;margin-top:40px;
   }
   .diff-visual{text-align:left}
   .diff-metric{display:inline-block}
-
+ 
   /* Prob cells */
   .prob-cell{padding:28px 20px}
-
+ 
   /* Solution visual */
   .sol-visual{padding:24px 20px}
-
+ 
   /* Stats */
   .stat-cell{padding:32px 20px}
-
+ 
   /* Steps */
   .step-row{padding:24px 20px;gap:16px}
-
+ 
   /* Pricing */
   .price-card{padding:28px 20px}
-
+ 
   /* Strip */
   .strip{padding:0}
-
+ 
   /* CTA section */
   .cta-section{padding:72px 20px}
   .cta-section::before{width:100%;height:280px}
-
+ 
   /* Footer */
   footer{
     flex-direction:column;gap:12px;text-align:center;
     padding:24px 20px;
   }
-
+ 
   /* Hero CTAs */
   .hero-ctas{flex-direction:column;align-items:center}
   .hero-ctas .btn-solid,.hero-ctas .btn-outline{width:100%;max-width:280px;text-align:center}
 }
-
+ 
 /* ── SMALL MOBILE (≤ 400px) ── */
 @media(max-width:400px){
   .hero{padding:48px 16px 44px}
@@ -409,51 +405,51 @@ h1{animation:fadeUp .5s ease .2s both}
   .strip{padding:0}
   .strip-logos{gap:36px}
 }
-
 </style>
 </head>
 <body>
-
+ 
 <header>
 <nav>
   <div class="logo">böhm<span>.</span>dev</div>
   <div class="nav-links">
-    <a href="#problema">Por qué</a>
-    <a href="#proceso">Proceso</a>
-    <a href="#precios">Planes</a>
+    <a href="#problema" data-i18n="nav.why">Por qué</a>
+    <a href="#proceso" data-i18n="nav.process">Proceso</a>
+    <a href="#precios" data-i18n="nav.plans">Planes</a>
   </div>
-  <a href="https://wa.me/5492215404664" class="nav-btn">Agendar llamada</a>
+  <a href="https://wa.me/5492215404664" class="nav-btn" data-i18n="nav.cta">Agendar llamada</a>
   <button class="nav-hamburger" id="hamburger" aria-label="Menú">
     <span></span><span></span><span></span>
   </button>
 </nav>
 <div class="mobile-nav" id="mobileNav">
-  <a href="#problema" class="mobile-link">Por qué</a>
-  <a href="#proceso" class="mobile-link">Proceso</a>
-  <a href="#precios" class="mobile-link">Planes</a>
-  <a href="https://wa.me/5492215404664" class="nav-btn">Agendar llamada</a>
+  <a href="#problema" class="mobile-link" data-i18n="nav.why">Por qué</a>
+  <a href="#proceso" class="mobile-link" data-i18n="nav.process">Proceso</a>
+  <a href="#precios" class="mobile-link" data-i18n="nav.plans">Planes</a>
+  <a href="https://wa.me/5492215404664" class="nav-btn" data-i18n="nav.cta">Agendar llamada</a>
 </div>
 </header>
+ 
 <!-- HERO -->
 <main>
 <section class="hero">
   <div class="hero-glow"></div>
-  <div class="hero-badge"><span class="dot"></span> Diseño & Desarrollo Web</div>
-  <h1>Landing pages que convierten visitas en <em>clientes</em></h1>
-  <p class="hero-sub">Diseño y desarrollo web para profesionales y empresas que necesitan resultados reales, no solo presencia online.</p>
+  <div class="hero-badge"><span class="dot"></span> <span data-i18n="hero.badge">Diseño & Desarrollo Web</span></div>
+  <h1 data-i18n="hero.title">Landing pages que convierten visitas en <em>clientes</em></h1>
+  <p class="hero-sub" data-i18n="hero.sub">Diseño y desarrollo web para profesionales y empresas que necesitan resultados reales, no solo presencia online.</p>
   <div class="hero-ctas">
-    <a href="https://wa.me/5492215404664" class="btn-solid">Agendar llamada</a>
-    <a href="#proceso" class="btn-outline">Ver cómo funciona</a>
+    <a href="https://wa.me/5492215404664" class="btn-solid" data-i18n="hero.cta1">Agendar llamada</a>
+    <a href="#proceso" class="btn-outline" data-i18n="hero.cta2">Ver cómo funciona</a>
   </div>
 </section>
-
+ 
 <div class="strip">
-  <p>Profesionales que ya confían</p>
+  <p data-i18n="strip.label">Profesionales que ya confían</p>
   <div class="strip-track" aria-hidden="true">
     <div class="strip-logos">
-      <span class="strip-logo">Consultoría</span>
+      <span class="strip-logo" data-i18n="strip.s1">Consultoría</span>
       <span class="strip-sep"></span>
-      <span class="strip-logo">Servicios</span>
+      <span class="strip-logo" data-i18n="strip.s2">Servicios</span>
       <span class="strip-sep"></span>
       <span class="strip-logo">E-commerce</span>
       <span class="strip-sep"></span>
@@ -461,18 +457,18 @@ h1{animation:fadeUp .5s ease .2s both}
       <span class="strip-sep"></span>
       <span class="strip-logo">Startups</span>
       <span class="strip-sep"></span>
-      <span class="strip-logo">Inmobiliarias</span>
+      <span class="strip-logo" data-i18n="strip.s6">Inmobiliarias</span>
       <span class="strip-sep"></span>
       <span class="strip-logo">Coaches</span>
       <span class="strip-sep"></span>
-      <span class="strip-logo">Psicólogos</span>
+      <span class="strip-logo" data-i18n="strip.s8">Psicólogos</span>
       <span class="strip-sep"></span>
     </div>
     <!-- Duplicate for seamless loop -->
     <div class="strip-logos" aria-hidden="true">
-      <span class="strip-logo">Consultoría</span>
+      <span class="strip-logo" data-i18n="strip.s1">Consultoría</span>
       <span class="strip-sep"></span>
-      <span class="strip-logo">Servicios</span>
+      <span class="strip-logo" data-i18n="strip.s2">Servicios</span>
       <span class="strip-sep"></span>
       <span class="strip-logo">E-commerce</span>
       <span class="strip-sep"></span>
@@ -480,185 +476,362 @@ h1{animation:fadeUp .5s ease .2s both}
       <span class="strip-sep"></span>
       <span class="strip-logo">Startups</span>
       <span class="strip-sep"></span>
-      <span class="strip-logo">Inmobiliarias</span>
+      <span class="strip-logo" data-i18n="strip.s6">Inmobiliarias</span>
       <span class="strip-sep"></span>
       <span class="strip-logo">Coaches</span>
       <span class="strip-sep"></span>
-      <span class="strip-logo">Psicólogos</span>
+      <span class="strip-logo" data-i18n="strip.s8">Psicólogos</span>
       <span class="strip-sep"></span>
     </div>
   </div>
 </div>
-
+ 
 <!-- PROBLEMA -->
 <div class="section-border">
   <div class="section" id="problema">
-    <span class="tag r">El problema</span>
-    <h2 class="r">Tener una web hoy no alcanza</h2>
-    <p class="lead r">Si no está pensada para convertir, es solo una tarjeta digital que nadie usa. Muchas empresas pierden oportunidades todos los días porque su web:</p>
+    <span class="tag r" data-i18n="prob.tag">El problema</span>
+    <h2 class="r" data-i18n="prob.title">Tener una web hoy no alcanza</h2>
+    <p class="lead r" data-i18n="prob.lead">Si no está pensada para convertir, es solo una tarjeta digital que nadie usa. Muchas empresas pierden oportunidades todos los días porque su web:</p>
     <div class="prob-grid">
       <div class="prob-cell r">
         <div class="prob-icon">⚡</div>
-        <h3>No transmite confianza</h3>
-        <p>El usuario llega y en segundos decide si confía. Un diseño sin estrategia lo pierde antes de leer una palabra.</p>
+        <h3 data-i18n="prob.1.title">No transmite confianza</h3>
+        <p data-i18n="prob.1.desc">El usuario llega y en segundos decide si confía. Un diseño sin estrategia lo pierde antes de leer una palabra.</p>
       </div>
       <div class="prob-cell r d1">
         <div class="prob-icon">💬</div>
-        <h3>No explica bien lo que hacés</h3>
-        <p>El mensaje es confuso y el visitante se va sin entender qué ofrecés ni por qué elegirite a vos.</p>
+        <h3 data-i18n="prob.2.title">No explica bien lo que hacés</h3>
+        <p data-i18n="prob.2.desc">El mensaje es confuso y el visitante se va sin entender qué ofrecés ni por qué elegirite a vos.</p>
       </div>
       <div class="prob-cell r d2">
         <div class="prob-icon">🎯</div>
-        <h3>No guía al usuario a actuar</h3>
-        <p>Sin un camino claro hacia el contacto, la consulta nunca llega. La intención se pierde en el scroll.</p>
+        <h3 data-i18n="prob.3.title">No guía al usuario a actuar</h3>
+        <p data-i18n="prob.3.desc">Sin un camino claro hacia el contacto, la consulta nunca llega. La intención se pierde en el scroll.</p>
       </div>
       <div class="prob-cell r d3">
         <div class="prob-icon">📉</div>
-        <h3>Pierde oportunidades cada día</h3>
-        <p>Cada visita que no convierte es un cliente que se fue a la competencia. El tiempo cuesta dinero.</p>
+        <h3 data-i18n="prob.4.title">Pierde oportunidades cada día</h3>
+        <p data-i18n="prob.4.desc">Cada visita que no convierte es un cliente que se fue a la competencia. El tiempo cuesta dinero.</p>
       </div>
     </div>
   </div>
 </div>
-
+ 
 <!-- SOLUCIÓN -->
 <div class="section-border">
   <div class="section" id="solucion">
-    <span class="tag r">La solución</span>
-    <h2 class="r">Transformo tu web en una herramienta para conseguir clientes</h2>
+    <span class="tag r" data-i18n="sol.tag">La solución</span>
+    <h2 class="r" data-i18n="sol.title">Transformo tu web en una herramienta para conseguir clientes</h2>
     <div class="sol-wrap">
       <div>
-        <p class="lead r" style="margin-bottom:32px">Desarrollo landing pages enfocadas en conversión, pensadas para que cada visita tenga un objetivo claro: contactarte.</p>
+        <p class="lead r" style="margin-bottom:32px" data-i18n="sol.lead">Desarrollo landing pages enfocadas en conversión, pensadas para que cada visita tenga un objetivo claro: contactarte.</p>
         <ul class="sol-list">
-          <li class="r d1"><span class="sol-check">✓</span> Diseño estratégico orientado a resultados</li>
-          <li class="r d2"><span class="sol-check">✓</span> Mensaje claro y persuasivo que convierte</li>
-          <li class="r d3"><span class="sol-check">✓</span> Optimización para todos los dispositivos</li>
-          <li class="r"><span class="sol-check">✓</span> Integración con WhatsApp y formularios</li>
+          <li class="r d1"><span class="sol-check">✓</span> <span data-i18n="sol.li1">Diseño estratégico orientado a resultados</span></li>
+          <li class="r d2"><span class="sol-check">✓</span> <span data-i18n="sol.li2">Mensaje claro y persuasivo que convierte</span></li>
+          <li class="r d3"><span class="sol-check">✓</span> <span data-i18n="sol.li3">Optimización para todos los dispositivos</span></li>
+          <li class="r"><span class="sol-check">✓</span> <span data-i18n="sol.li4">Integración con WhatsApp y formularios</span></li>
         </ul>
       </div>
       <div class="sol-visual r d1">
         <div class="code-line"><span class="kw">// böhm.dev landing</span></div>
-        <div class="code-line" style="margin-top:16px"><span class="fn">headline</span><span class="str"> → claro y directo</span></div>
-        <div class="code-line"><span class="fn">mensaje</span><span class="str"> → orientado al cliente</span></div>
-        <div class="code-line"><span class="fn">CTA</span><span class="str"> → visible y directo</span></div>
-        <div class="code-line"><span class="fn">mobile</span><span class="str"> → 100% optimizado</span></div>
-        <div class="code-line" style="margin-top:16px"><span class="kw">// resultado</span></div>
-        <div class="code-line"><span class="str" style="color:#86efac">✓ conversión activa</span></div>
+        <div class="code-line" style="margin-top:16px"><span class="fn">headline</span><span class="str" data-i18n="sol.code.headline"> → claro y directo</span></div>
+        <div class="code-line"><span class="fn">mensaje</span><span class="str" data-i18n="sol.code.mensaje"> → orientado al cliente</span></div>
+        <div class="code-line"><span class="fn">CTA</span><span class="str" data-i18n="sol.code.cta"> → visible y directo</span></div>
+        <div class="code-line"><span class="fn">mobile</span><span class="str" data-i18n="sol.code.mobile"> → 100% optimizado</span></div>
+        <div class="code-line" style="margin-top:16px"><span class="kw" data-i18n="sol.code.result">// resultado</span></div>
+        <div class="code-line"><span class="str" style="color:#86efac" data-i18n="sol.code.check">✓ conversión activa</span></div>
         <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--border);display:flex;align-items:center;gap:10px">
           <div style="width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 2s infinite"></div>
-          <span style="font-size:.78rem;color:var(--muted)">En producción desde el día 1</span>
+          <span style="font-size:.78rem;color:var(--muted)" data-i18n="sol.live">En producción desde el día 1</span>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-
+ 
+ 
 <!-- PROCESO -->
 <div class="section-border">
   <div class="section" id="proceso">
-    <span class="tag r">El proceso</span>
-    <h2 class="r">Un proceso simple y enfocado en resultados</h2>
+    <span class="tag r" data-i18n="proc.tag">El proceso</span>
+    <h2 class="r" data-i18n="proc.title">Un proceso simple y enfocado en resultados</h2>
     <div class="steps-list r">
       <div class="step-row">
         <div class="step-num">01</div>
         <div class="step-body">
-          <h3>Análisis</h3>
-          <p>Entiendo tu negocio, tu público y tus objetivos. Sin esto, cualquier diseño es solo decoración.</p>
+          <h3 data-i18n="proc.1.title">Análisis</h3>
+          <p data-i18n="proc.1.desc">Entiendo tu negocio, tu público y tus objetivos. Sin esto, cualquier diseño es solo decoración.</p>
         </div>
       </div>
       <div class="step-row">
         <div class="step-num">02</div>
         <div class="step-body">
-          <h3>Estrategia</h3>
-          <p>Defino la estructura del mensaje y el flujo de conversión. Cada sección tiene un por qué.</p>
+          <h3 data-i18n="proc.2.title">Estrategia</h3>
+          <p data-i18n="proc.2.desc">Defino la estructura del mensaje y el flujo de conversión. Cada sección tiene un por qué.</p>
         </div>
       </div>
       <div class="step-row">
         <div class="step-num">03</div>
         <div class="step-body">
-          <h3>Diseño y desarrollo</h3>
-          <p>Creo la landing optimizada con todo lo que necesitás para convertir desde el día uno.</p>
+          <h3 data-i18n="proc.3.title">Diseño y desarrollo</h3>
+          <p data-i18n="proc.3.desc">Creo la landing optimizada con todo lo que necesitás para convertir desde el día uno.</p>
         </div>
       </div>
       <div class="step-row">
         <div class="step-num">04</div>
         <div class="step-body">
-          <h3>Optimización</h3>
-          <p>Ajustes post-lanzamiento con datos reales para mejorar la conversión continuamente.</p>
+          <h3 data-i18n="proc.4.title">Optimización</h3>
+          <p data-i18n="proc.4.desc">Ajustes post-lanzamiento con datos reales para mejorar la conversión continuamente.</p>
         </div>
       </div>
     </div>
   </div>
 </div>
-
+ 
 <!-- PRECIOS -->
 <div class="section-border">
   <div class="section" id="precios">
-    <span class="tag r">Planes</span>
-    <h2 class="r">Simples y claros</h2>
+    <span class="tag r" data-i18n="price.tag">Planes</span>
+    <h2 class="r" data-i18n="price.title">Simples y claros</h2>
     <div class="price-grid">
       <div class="price-card r">
-        <span class="price-name">Landing Base</span>
+        <span class="price-name" data-i18n="price.base.name">Landing Base</span>
         <div class="price-amount"><sup>$</sup>500 <span style="font-size:1rem;font-weight:400;color:var(--muted)">USD</span></div>
-        <p class="price-from">Desde</p>
+        <p class="price-from" data-i18n="price.base.from">Desde</p>
         <ul class="price-items">
-          <li>Diseño + desarrollo completo</li>
-          <li>1 sección de contacto</li>
-          <li>Optimización básica para mobile</li>
-          <li>Entrega en 7 días hábiles</li>
+          <li data-i18n="price.base.li1">Diseño + desarrollo completo</li>
+          <li data-i18n="price.base.li2">1 sección de contacto</li>
+          <li data-i18n="price.base.li3">Optimización básica para mobile</li>
+          <li data-i18n="price.base.li4">Entrega en 7 días hábiles</li>
         </ul>
-        <a href="https://wa.me/5492215404664?text=Hola!%20Quiero%20consultar%20por%20la%20Landing%20Base" class="price-cta">Empezar →</a>
+        <a href="https://wa.me/5492215404664?text=Hola!%20Quiero%20consultar%20por%20la%20Landing%20Base" class="price-cta" data-i18n="price.base.cta">Empezar →</a>
       </div>
       <div class="price-card featured r d1">
-        <span class="price-tag">Recomendado</span>
-        <span class="price-name">Landing Optimizada</span>
+        <span class="price-tag" data-i18n="price.opt.badge">Recomendado</span>
+        <span class="price-name" data-i18n="price.opt.name">Landing Optimizada</span>
         <div class="price-amount"><sup>$</sup>700 <span style="font-size:1rem;font-weight:400;color:var(--muted)">USD</span></div>
-        <p class="price-from">Desde</p>
+        <p class="price-from" data-i18n="price.opt.from">Desde</p>
         <ul class="price-items">
-          <li>Copy estratégico incluido</li>
-          <li>SEO básico y metadatos</li>
-          <li>Integración completa WhatsApp</li>
-          <li>Optimización post-lanzamiento</li>
-          <li>Entrega en 10 días hábiles</li>
+          <li data-i18n="price.opt.li1">Copy estratégico incluido</li>
+          <li data-i18n="price.opt.li2">SEO básico y metadatos</li>
+          <li data-i18n="price.opt.li3">Integración completa WhatsApp</li>
+          <li data-i18n="price.opt.li4">Optimización post-lanzamiento</li>
+          <li data-i18n="price.opt.li5">Entrega en 10 días hábiles</li>
         </ul>
-        <a href="https://wa.me/5492215404664?text=Hola!%20Quiero%20consultar%20por%20la%20Landing%20Optimizada" class="price-cta">Agendar llamada →</a>
+        <a href="https://wa.me/5492215404664?text=Hola!%20Quiero%20consultar%20por%20la%20Landing%20Optimizada" class="price-cta" data-i18n="price.opt.cta">Agendar llamada →</a>
       </div>
     </div>
   </div>
 </div>
-
+ 
 <!-- DIFERENCIAL -->
 <div class="section-border">
   <div class="section">
     <div class="diff-box r">
       <div>
-        <span class="tag" style="margin-bottom:16px">Por qué Böhm Dev</span>
-        <h2>No hago webs, creo herramientas para vender</h2>
-        <p style="font-size:.95rem;color:var(--light);max-width:44ch;line-height:1.7;margin-top:14px">Cada decisión de diseño tiene un objetivo: generar confianza y lograr que el usuario actúe. No trabajo en plantillas, trabajo en estrategia.</p>
+        <span class="tag" style="margin-bottom:16px" data-i18n="diff.tag">Por qué Böhm Dev</span>
+        <h2 data-i18n="diff.title">No hago webs, creo herramientas para vender</h2>
+        <p style="font-size:.95rem;color:var(--light);max-width:44ch;line-height:1.7;margin-top:14px" data-i18n="diff.desc">Cada decisión de diseño tiene un objetivo: generar confianza y lograr que el usuario actúe. No trabajo en plantillas, trabajo en estrategia.</p>
       </div>
     </div>
   </div>
 </div>
-
+ 
 <!-- CTA FINAL -->
 <section class="cta-section" id="contacto">
-  <span class="tag r" style="display:block">Siguiente paso</span>
-  <h2 class="r">Empezá a convertir<br>visitas en clientes</h2>
-  <p class="r">Coordinemos una llamada y veamos cómo mejorar tu presencia online.</p>
+  <span class="tag r" style="display:block" data-i18n="cta.tag">Siguiente paso</span>
+  <h2 class="r" data-i18n="cta.title">Empezá a convertir<br>visitas en clientes</h2>
+  <p class="r" data-i18n="cta.desc">Coordinemos una llamada y veamos cómo mejorar tu presencia online.</p>
   <div class="hero-ctas r">
-    <a href="https://wa.me/5492215404664" class="btn-solid">Agendar llamada</a>
+    <a href="https://wa.me/5492215404664" class="btn-solid" data-i18n="cta.btn">Agendar llamada</a>
   </div>
 </section>
-
+ 
 </main>
-  
+ 
 <footer>
   <div class="logo">böhm<span style="color:var(--green)">.</span>dev</div>
-  <span>© 2026 Böhm Dev. Todos los derechos reservados.</span>
+  <span data-i18n="footer.copy">© 2025 Böhm Dev. Todos los derechos reservados.</span>
 </footer>
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+ 
+<!-- ═══════════════════════════════════════════════
+     i18n — detección automática + botones manuales
+════════════════════════════════════════════════ -->
+<script>
+const translations = {
+  es: {
+    "nav.why":          "Por qué",
+    "nav.process":      "Proceso",
+    "nav.plans":        "Planes",
+    "nav.cta":          "Agendar llamada",
+    "hero.badge":       "Diseño & Desarrollo Web",
+    "hero.title":       'Landing pages que convierten visitas en <em>clientes</em>',
+    "hero.sub":         "Diseño y desarrollo web para profesionales y empresas que necesitan resultados reales, no solo presencia online.",
+    "hero.cta1":        "Agendar llamada",
+    "hero.cta2":        "Ver cómo funciona",
+    "strip.label":      "Profesionales que ya confían",
+    "strip.s1":         "Consultoría",
+    "strip.s2":         "Servicios",
+    "strip.s6":         "Inmobiliarias",
+    "strip.s8":         "Psicólogos",
+    "prob.tag":         "El problema",
+    "prob.title":       "Tener una web hoy no alcanza",
+    "prob.lead":        "Si no está pensada para convertir, es solo una tarjeta digital que nadie usa. Muchas empresas pierden oportunidades todos los días porque su web:",
+    "prob.1.title":     "No transmite confianza",
+    "prob.1.desc":      "El usuario llega y en segundos decide si confía. Un diseño sin estrategia lo pierde antes de leer una palabra.",
+    "prob.2.title":     "No explica bien lo que hacés",
+    "prob.2.desc":      "El mensaje es confuso y el visitante se va sin entender qué ofrecés ni por qué elegirite a vos.",
+    "prob.3.title":     "No guía al usuario a actuar",
+    "prob.3.desc":      "Sin un camino claro hacia el contacto, la consulta nunca llega. La intención se pierde en el scroll.",
+    "prob.4.title":     "Pierde oportunidades cada día",
+    "prob.4.desc":      "Cada visita que no convierte es un cliente que se fue a la competencia. El tiempo cuesta dinero.",
+    "sol.tag":          "La solución",
+    "sol.title":        "Transformo tu web en una herramienta para conseguir clientes",
+    "sol.lead":         "Desarrollo landing pages enfocadas en conversión, pensadas para que cada visita tenga un objetivo claro: contactarte.",
+    "sol.li1":          "Diseño estratégico orientado a resultados",
+    "sol.li2":          "Mensaje claro y persuasivo que convierte",
+    "sol.li3":          "Optimización para todos los dispositivos",
+    "sol.li4":          "Integración con WhatsApp y formularios",
+    "sol.live":         "En producción desde el día 1",
+    "sol.code.headline":" → claro y directo",
+    "sol.code.mensaje": " → orientado al cliente",
+    "sol.code.cta":     " → visible y directo",
+    "sol.code.mobile":  " → 100% optimizado",
+    "sol.code.result":  "// resultado",
+    "sol.code.check":   "✓ conversión activa",
+    "proc.tag":         "El proceso",
+    "proc.title":       "Un proceso simple y enfocado en resultados",
+    "proc.1.title":     "Análisis",
+    "proc.1.desc":      "Entiendo tu negocio, tu público y tus objetivos. Sin esto, cualquier diseño es solo decoración.",
+    "proc.2.title":     "Estrategia",
+    "proc.2.desc":      "Defino la estructura del mensaje y el flujo de conversión. Cada sección tiene un por qué.",
+    "proc.3.title":     "Diseño y desarrollo",
+    "proc.3.desc":      "Creo la landing optimizada con todo lo que necesitás para convertir desde el día uno.",
+    "proc.4.title":     "Optimización",
+    "proc.4.desc":      "Ajustes post-lanzamiento con datos reales para mejorar la conversión continuamente.",
+    "price.tag":        "Planes",
+    "price.title":      "Simples y claros",
+    "price.base.name":  "Landing Base",
+    "price.base.from":  "Desde",
+    "price.base.li1":   "Diseño + desarrollo completo",
+    "price.base.li2":   "1 sección de contacto",
+    "price.base.li3":   "Optimización básica para mobile",
+    "price.base.li4":   "Entrega en 7 días hábiles",
+    "price.base.cta":   "Empezar →",
+    "price.opt.badge":  "Recomendado",
+    "price.opt.name":   "Landing Optimizada",
+    "price.opt.from":   "Desde",
+    "price.opt.li1":    "Copy estratégico incluido",
+    "price.opt.li2":    "SEO básico y metadatos",
+    "price.opt.li3":    "Integración completa WhatsApp",
+    "price.opt.li4":    "Optimización post-lanzamiento",
+    "price.opt.li5":    "Entrega en 10 días hábiles",
+    "price.opt.cta":    "Agendar llamada →",
+    "diff.tag":         "Por qué Böhm Dev",
+    "diff.title":       "No hago webs, creo herramientas para vender",
+    "diff.desc":        "Cada decisión de diseño tiene un objetivo: generar confianza y lograr que el usuario actúe. No trabajo en plantillas, trabajo en estrategia.",
+    "cta.tag":          "Siguiente paso",
+    "cta.title":        "Empezá a convertir<br>visitas en clientes",
+    "cta.desc":         "Coordinemos una llamada y veamos cómo mejorar tu presencia online.",
+    "cta.btn":          "Agendar llamada",
+    "footer.copy":      "© 2025 Böhm Dev. Todos los derechos reservados.",
+  },
+  en: {
+    "nav.why":          "Why us",
+    "nav.process":      "Process",
+    "nav.plans":        "Plans",
+    "nav.cta":          "Book a call",
+    "hero.badge":       "Web Design & Development",
+    "hero.title":       'Landing pages that turn visitors into <em>clients</em>',
+    "hero.sub":         "Web design and development for professionals and businesses that need real results, not just an online presence.",
+    "hero.cta1":        "Book a call",
+    "hero.cta2":        "See how it works",
+    "strip.label":      "Professionals who already trust us",
+    "strip.s1":         "Consulting",
+    "strip.s2":         "Services",
+    "strip.s6":         "Real Estate",
+    "strip.s8":         "Psychologists",
+    "prob.tag":         "The problem",
+    "prob.title":       "Having a website today isn't enough",
+    "prob.lead":        "If it's not built to convert, it's just a digital card nobody uses. Many businesses lose opportunities every day because their site:",
+    "prob.1.title":     "Doesn't build trust",
+    "prob.1.desc":      "Users decide in seconds whether they trust you. A website without strategy loses them before they read a single word.",
+    "prob.2.title":     "Doesn't explain what you do",
+    "prob.2.desc":      "The message is unclear and visitors leave without understanding what you offer or why they should choose you.",
+    "prob.3.title":     "Doesn't guide users to act",
+    "prob.3.desc":      "Without a clear path to contact, inquiries never arrive. Intent gets lost in the scroll.",
+    "prob.4.title":     "Loses opportunities every day",
+    "prob.4.desc":      "Every visit that doesn't convert is a client who went to the competition. Time costs money.",
+    "sol.tag":          "The solution",
+    "sol.title":        "I turn your website into a client-getting machine",
+    "sol.lead":         "I build conversion-focused landing pages designed so every visit has one clear goal: contacting you.",
+    "sol.li1":          "Strategic design focused on results",
+    "sol.li2":          "Clear, persuasive copy that converts",
+    "sol.li3":          "Optimized for all devices",
+    "sol.li4":          "WhatsApp and form integration",
+    "sol.live":         "Live from day one",
+    "sol.code.headline":" → clear and direct",
+    "sol.code.mensaje": " → client-focused",
+    "sol.code.cta":     " → visible and direct",
+    "sol.code.mobile":  " → 100% optimized",
+    "sol.code.result":  "// result",
+    "sol.code.check":   "✓ active conversion",
+    "proc.tag":         "The process",
+    "proc.title":       "A simple, results-focused process",
+    "proc.1.title":     "Analysis",
+    "proc.1.desc":      "I learn about your business, audience, and goals. Without this, any design is just decoration.",
+    "proc.2.title":     "Strategy",
+    "proc.2.desc":      "I define the message structure and conversion flow. Every section has a reason.",
+    "proc.3.title":     "Design & development",
+    "proc.3.desc":      "I build your optimized landing page with everything you need to convert from day one.",
+    "proc.4.title":     "Optimization",
+    "proc.4.desc":      "Post-launch adjustments with real data to continuously improve conversion.",
+    "price.tag":        "Plans",
+    "price.title":      "Simple and clear",
+    "price.base.name":  "Base Landing",
+    "price.base.from":  "Starting at",
+    "price.base.li1":   "Full design + development",
+    "price.base.li2":   "1 contact section",
+    "price.base.li3":   "Basic mobile optimization",
+    "price.base.li4":   "Delivery in 7 business days",
+    "price.base.cta":   "Get started →",
+    "price.opt.badge":  "Recommended",
+    "price.opt.name":   "Optimized Landing",
+    "price.opt.from":   "Starting at",
+    "price.opt.li1":    "Strategic copy included",
+    "price.opt.li2":    "Basic SEO and metadata",
+    "price.opt.li3":    "Full WhatsApp integration",
+    "price.opt.li4":    "Post-launch optimization",
+    "price.opt.li5":    "Delivery in 10 business days",
+    "price.opt.cta":    "Book a call →",
+    "diff.tag":         "Why Böhm Dev",
+    "diff.title":       "I don't make websites, I build tools that sell",
+    "diff.desc":        "Every design decision has one goal: build trust and make users take action. I don't work with templates, I work with strategy.",
+    "cta.tag":          "Next step",
+    "cta.title":        "Start turning visitors<br>into clients",
+    "cta.desc":         "Let's set up a call and see how to improve your online presence.",
+    "cta.btn":          "Book a call",
+    "footer.copy":      "© 2025 Böhm Dev. All rights reserved.",
+  }
+};
+ 
+function setLang(lang) {
+  const t = translations[lang] || translations['es'];
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (t[key] !== undefined) el.innerHTML = t[key];
+  });
+  document.documentElement.lang = lang;
+}
+ 
+// Detectar idioma del navegador al cargar
+const browserLang = (navigator.language || navigator.userLanguage || 'es').slice(0, 2);
+const initialLang = translations[browserLang] ? browserLang : 'es';
+setLang(initialLang);
+</script>
+ 
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script>
 // Hamburger menu
 const hamburger = document.getElementById('hamburger');
 const mobileNav = document.getElementById('mobileNav');
@@ -675,10 +848,9 @@ mobileNav.querySelectorAll('a').forEach(a => {
     document.body.style.overflow = '';
   });
 });
-</script><script>
-</script><script>
+</script>
+<script>
 // Reveal animation — only for users (not bots)
-// Elements start visible for SEO; JS adds .anim to enable the fade-in effect
 const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 if (!prefersReduced) {
   document.querySelectorAll('.r').forEach(el => el.classList.add('anim'));
